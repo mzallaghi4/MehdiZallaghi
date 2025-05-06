@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Optimization - Blog - Mehdi Zallaghi</title> <!-- Specific Title -->
+    <link rel="stylesheet" href="../style.css"> <!-- Path adjusted -->
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Path adjusted -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <!-- Brand/Logo area - Link back to main page -->
+            <div class="site-title"><a href="../index.html">Mehdi Zallaghi</a></div> <!-- Link back to index -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="site-nav">
+                <ul>
+                    <!-- Links point back to sections on the main page -->
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#publications">Publications</a></li>
+                    <li><a href="../blog.html">Blog</a></li> <!-- Link back to the blog index -->
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main content section for the blog post -->
+        <section id="portfolio-optimization-post" class="content-section fade-in-section">
+            <div class="container blog-post-content"> <!-- Added blog-post-content class for specific styling -->
+                <h2>Understanding Portfolio Optimization in Quantitative Finance</h2>
+
+                <p class="blog-date">Published on: October 26, 2023 | By Mehdi Zallaghi</p>
+
+                <p>
+                    Portfolio optimization is a cornerstone of modern financial theory and practice. At its heart, it's the process of selecting the best possible asset allocation to meet an investor's specific objectives, typically aiming to maximize returns for a given level of risk, or minimize risk for a desired level of return. For quantitative finance professionals, this involves applying rigorous mathematical and statistical techniques to historical and predicted data.
+                </p>
+
+                <h3>The Foundation: Modern Portfolio Theory (MPT)</h3>
+                <p>
+                    Pioneered by Harry Markowitz in the 1950s, Modern Portfolio Theory (MPT) provides the theoretical framework for portfolio optimization. MPT suggests that investors should not look at the risk and return of individual assets in isolation, but rather how they interact with each other within a portfolio. Diversification is key – combining assets whose returns are not perfectly positively correlated can reduce overall portfolio risk without sacrificing expected returns.
+                </p>
+
+                <p>
+                    The output of MPT is often the "efficient frontier," a curve representing portfolios that offer the highest expected return for each level of risk. Portfolios below the frontier are suboptimal (either higher risk for the same return, or lower return for the same risk), while portfolios above the frontier are theoretically impossible to achieve given the available assets.
+                </p>
+
+                <h3>Quantitative Techniques Involved</h3>
+                <p>
+                    Implementing MPT and other optimization strategies requires quantitative skills:
+                </p>
+                <ul>
+                    <li><strong>Data Analysis:</strong> Gathering historical price data, calculating returns, volatilities, and correlations.</li>
+                    <li><strong>Statistical Modeling:</strong> Estimating future returns, risks, and correlations. This might involve time series analysis, factor models, or machine learning approaches.</li>
+                    <li><strong>Optimization Algorithms:</strong> Solving complex mathematical problems to find the optimal weights (allocations) for each asset in the portfolio. This often involves quadratic programming for mean-variance optimization.</li>
+                    <li><strong>Simulation:</strong> Using Monte Carlo simulations to assess the potential outcomes of a portfolio under various market conditions.</li>
+                </ul>
+
+                <h3>Beyond Markowitz: Challenges and Extensions</h3>
+                <p>
+                    While foundational, MPT has limitations. Its reliance on historical data as a predictor of the future, sensitivity to input parameters, and assumptions about investor rationality and market efficiency are often cited. Quantitative finance explores extensions and alternatives:
+                </p>
+                <ul>
+                    <li><strong>Black-Litterman Model:</strong> Incorporates investor views on market returns alongside equilibrium market expectations.</li>
+                    <li><strong>Robust Optimization:</strong> Aims to make portfolio allocation less sensitive to small changes in input parameters.</li>
+                    <li><strong>Factor Investing:</strong> Building portfolios based on exposure to specific risk factors (e.g., value, momentum, size).</li>
+                    <li><strong>Machine Learning:</strong> Using ML for forecasting inputs, constructing portfolios, or managing risk directly.</li>
+                </ul>
+
+                <p>
+                    Portfolio optimization remains a dynamic field, constantly evolving with new data, computational power, and theoretical advancements. For quant professionals, mastering its principles and techniques is essential for constructing robust and effective investment strategies.
+                </p>
+
+                <!-- Optional: Add links to related projects or publications -->
+                <!--
+                <div class="related-links" style="margin-top: 40px;">
+                    <h4>Related:</h4>
+                    <p><a href="../index.html#projects" class="button-link secondary">See my Portfolio Optimization Project</a></p>
+                    <p><a href="../index.html#publications" class="button-link secondary">Relevant Publication Title</a></p>
+                </div>
+                -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Mehdi Zallaghi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script> <!-- Path adjusted -->
+</body>
+</html>
