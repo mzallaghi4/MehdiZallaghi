@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehdi Zallaghi Portfolio</title>
+    <title>Your Name - Quant Finance & Risk Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Optional: Link to a Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon (Optional but professional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts: A professional sans-serif for body and a stronger one for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1>Mehdi Zallaghi</h1>
-            <p class="tagline">Quantitative Finance & Risk Management Professional</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -25,22 +25,38 @@
         </div>
     </header>
 
+    <section id="hero" class="hero-section fade-in-section">
+        <div class="container">
+            <div class="hero-content">
+                 <h1>Your Name</h1>
+                 <p class="tagline">Quantitative Finance & Risk Management Professional</p>
+                 <p class="subtitle">Applying data-driven insights to financial challenges.</p>
+                 <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
     <main>
-        <section id="about">
+        <section id="about" class="content-section fade-in-section">
             <div class="container">
                 <h2>About Me</h2>
-                <p>
-                    [Your professional summary here.]
-                    Experienced [Your Role] with a strong foundation in quantitative analysis, statistical modeling, and financial risk management. Proficient in developing and implementing data-driven solutions for complex financial problems. Passionate about applying rigorous quantitative techniques to understand and manage market, credit, and operational risks.
-                    </p>
-                 <p>
-                     [Add more details about your background, interests in the field, and professional goals.]
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <div class="about-content">
+                     <img src="your-photo.jpg" alt="Your Photo" class="profile-photo"> <!-- Add your photo -->
+                     <div>
+                        <p>
+                            [Your professional summary here.]
+                            Experienced [Your Role] with a strong foundation in quantitative analysis, statistical modeling, and financial risk management. Proficient in developing and implementing data-driven solutions for complex financial problems. Passionate about applying rigorous quantitative techniques to understand and manage market, credit, and operational risks.
+                            </p>
+                         <p>
+                             [Add more details about your background, interests in the field, and professional goals.]
+                             Leveraging expertise in [mention a key skill, e.g., Python and statistical modeling], I aim to contribute to robust risk frameworks and insightful financial strategies.
+                        </p>
+                     </div>
+                </div>
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="content-section fade-in-section alternate-bg">
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-grid">
@@ -84,41 +100,47 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="content-section fade-in-section">
             <div class="container">
                 <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project-item">
                         <h3>Project Title 1</h3>
                         <p>[Brief description of Project 1. e.g., Developed a Python script for backtesting trading strategies using historical market data.]</p>
-                        <a href="#" target="_blank">View on GitHub</a>
-                        <!-- <a href="#" target="_blank">Live Demo (Optional)</a> -->
+                        <div class="project-links">
+                             <a href="#" target="_blank" class="button-link">View on GitHub</a>
+                             <!-- <a href="#" target="_blank" class="button-link secondary">Live Demo (Optional)</a> -->
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Project Title 2</h3>
                         <p>[Brief description of Project 2. e.g., Built a credit risk scoring model using machine learning techniques in R.]</p>
-                         <a href="#" target="_blank">View on GitHub</a>
-                        <!-- <a href="#" target="_blank">Report/Analysis (Optional)</a> -->
+                         <div class="project-links">
+                            <a href="#" target="_blank" class="button-link">View on GitHub</a>
+                            <!-- <a href="#" target="_blank" class="button-link secondary">Report/Analysis (Optional)</a> -->
+                         </div>
                     </div>
                      <div class="project-item">
                         <h3>Project Title 3</h3>
                         <p>[Brief description of Project 3. e.g., Analyzed liquidity risk in a simulated portfolio using Monte Carlo methods.]</p>
-                         <a href="#" target="_blank">View on GitHub</a>
-                        <!-- <a href="#" target="_blank">Presentation (Optional)</a> -->
+                         <div class="project-links">
+                            <a href="#" target="_blank" class="button-link">View on GitHub</a>
+                            <!-- <a href="#" target="_blank" class="button-link secondary">Presentation (Optional)</a> -->
+                         </div>
                     </div>
                     <!-- Add more project-item blocks as needed -->
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="content-section fade-in-section alternate-bg">
             <div class="container">
                 <h2>Contact</h2>
                 <p>Feel free to connect with me or check out my work:</p>
                 <div class="contact-links">
-                    <a href="mailto:your.email@example.com">Email</a>
-                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="mailto:your.email@example.com" class="contact-icon-link"><img src="email-icon.svg" alt="Email"> Email</a> <!-- Replace with actual icon/SVG -->
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-icon-link"><img src="linkedin-icon.svg" alt="LinkedIn"> LinkedIn</a> <!-- Replace with actual icon/SVG -->
+                    <a href="https://github.com/yourusername" target="_blank" class="contact-icon-link"><img src="github-icon.svg" alt="GitHub"> GitHub</a> <!-- Replace with actual icon/SVG -->
                     <!-- Add other links like personal website, blog, etc. -->
                 </div>
             </div>
@@ -127,7 +149,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2023 Your Name. All rights reserved.</p>
+            <p>© <span id="current-year"></span> Your Name. All rights reserved.</p>
         </div>
     </footer>
 
