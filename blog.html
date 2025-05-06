@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mehdi Zallaghi</title> <!-- Updated Title -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon (Optional but professional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts: A professional sans-serif for body and a stronger one for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome or similar for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+             <!-- Brand/Logo area (optional, could be your name) -->
+            <div class="site-title"><a href="index.html">Mehdi Zallaghi</a></div> <!-- Link back to main page hero -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="site-nav">
+                <ul>
+                    <!-- Links point back to sections on the main page -->
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li> <!-- Link to the blog index itself -->
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <!-- Hero/Banner specific to blog page (Optional) -->
+        <section id="blog-hero" class="hero-section fade-in-section" style="min-height: 30vh; display: flex; align-items: center;">
+             <div class="container">
+                 <div class="hero-content">
+                      <h1>Quantitative Finance Blog</h1>
+                      <p class="tagline">Insights and explorations in quant finance & risk management.</p>
+                 </div>
+             </div>
+         </section>
+
+        <section id="blog-list-section" class="content-section fade-in-section alternate-bg"> <!-- Use alternate-bg for consistent look -->
+            <div class="container">
+                <h2>All Posts</h2>
+                <div class="blog-list">
+                    <!-- Repeat this blog-item structure for EACH blog post -->
+                    <div class="blog-item">
+                        <h3><a href="blog/post-slug-1.html">[Blog Post Title 1 - Full Link]</a></h3> <!-- Link to individual post -->
+                        <p class="blog-date">[Date, e.g., January 15, 2023]</p>
+                        <p>[A slightly longer excerpt or the full introductory paragraph of Blog Post 1.]</p>
+                         <div class="blog-links">
+                             <a href="blog/post-slug-1.html" class="button-link">Read More</a> <!-- Link to individual post -->
+                         </div>
+                    </div>
+
+                     <div class="blog-item">
+                        <h3><a href="blog/post-slug-2.html">[Blog Post Title 2 - Full Link]</a></h3> <!-- Link to individual post -->
+                        <p class="blog-date">[Date, e.g., February 28, 2023]</p>
+                        <p>[A slightly longer excerpt or the full introductory paragraph of Blog Post 2.]</p>
+                         <div class="blog-links">
+                            <a href="blog/post-slug-2.html" class="button-link">Read More</a> <!-- Link to individual post -->
+                         </div>
+                     </div>
+
+                     <div class="blog-item">
+                        <h3><a href="blog/post-slug-3.html">[Blog Post Title 3 - Full Link]</a></h3> <!-- Link to individual post -->
+                        <p class="blog-date">[Date, e.g., March 10, 2023]</p>
+                        <p>[A slightly longer excerpt or the full introductory paragraph of Blog Post 3.]</p>
+                         <div class="blog-links">
+                            <a href="blog/post-slug-3.html" class="button-link">Read More</a> <!-- Link to individual post -->
+                         </div>
+                     </div>
+                     <!-- Add more blog-item blocks for all your posts -->
+
+                </div>
+                <!-- Optional: Pagination links here if you have many posts -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Mehdi Zallaghi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the same script file -->
+</body>
+</html>
