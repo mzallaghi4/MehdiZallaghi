@@ -9,16 +9,28 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Google Fonts: A professional sans-serif for body and a stronger one for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome or similar for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header class="site-header">
         <div class="container">
-            <nav>
+            <!-- Brand/Logo area (optional, could be your name) -->
+            <div class="site-title"><a href="#hero">Mehdi Zallaghi</a></div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="site-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li> <!-- Added -->
+                    <li><a href="#blog">Blog</a></li> <!-- Added -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -139,6 +151,62 @@
                 </div>
             </div>
         </section>
+
+        <!-- Publications Section - Added -->
+        <section id="publications" class="content-section fade-in-section alternate-bg">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <h3>[Publication Title 1]</h3>
+                        <p><strong>Authors:</strong> [Author Names, e.g., J. Doe, <strong>M. Zallaghi</strong>, R. Smith]</p>
+                        <p><strong>Journal/Conference:</strong> [Journal Name or Conference Proceedings]</p>
+                        <p><strong>Year:</strong> [Year]</p>
+                        <div class="publication-links">
+                            <a href="#" target="_blank" class="button-link">View Paper (DOI/arXiv)</a>
+                            <!-- Add other links if applicable, e.g., presentation, code -->
+                        </div>
+                    </div>
+                    <div class="publication-item">
+                        <h3>[Publication Title 2]</h3>
+                         <p><strong>Authors:</strong> [Author Names, e.g., A. Brown, C. Green, <strong>M. Zallaghi</strong>]</p>
+                        <p><strong>Journal/Conference:</strong> [Journal Name or Conference Proceedings]</p>
+                        <p><strong>Year:</strong> [Year]</p>
+                         <div class="publication-links">
+                            <a href="#" target="_blank" class="button-link">View Paper (DOI/arXiv)</a>
+                         </div>
+                    </div>
+                    <!-- Add more publication-item blocks as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section - Added -->
+         <section id="blog" class="content-section fade-in-section">
+            <div class="container">
+                <h2>Blog / Articles</h2>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <h3><a href="#" target="_blank">[Blog Post Title 1]</a></h3> <!-- Link to the actual blog post -->
+                        <p class="blog-date">[Date, e.g., January 15, 2023]</p>
+                        <p>[Short excerpt or summary of the blog post. Briefly describe the topic and key takeaways.]</p>
+                         <div class="blog-links">
+                             <a href="#" target="_blank" class="button-link">Read More</a> <!-- Link to the actual blog post -->
+                         </div>
+                    </div>
+                     <div class="blog-item">
+                        <h3><a href="#" target="_blank">[Blog Post Title 2]</a></h3> <!-- Link to the actual blog post -->
+                        <p class="blog-date">[Date, e.g., February 28, 2023]</p>
+                        <p>[Short excerpt or summary of the blog post. Briefly describe the topic and key takeaways.]</p>
+                         <div class="blog-links">
+                            <a href="#" target="_blank" class="button-link">Read More</a> <!-- Link to the actual blog post -->
+                         </div>
+                     </div>
+                    <!-- Add more blog-item blocks as needed -->
+                </div>
+            </div>
+        </section>
+
 
         <section id="contact" class="content-section fade-in-section alternate-bg">
             <div class="container">
