@@ -218,3 +218,56 @@
         margin: 10px 0; /* Space out stacked nav items */
     }
 }
+/* Add to your style.css file */
+
+/* Styles specifically for individual blog post content */
+.blog-post-content h2 {
+     margin-top: 0; /* Ensure title isn't pushed down by section padding */
+     margin-bottom: 10px;
+     font-family: 'Roboto Slab', serif;
+}
+
+.blog-post-content .blog-date {
+    display: block; /* Ensure it's on its own line */
+    font-size: 0.95em;
+    color: #777;
+    margin-bottom: 25px; /* More space after date line */
+    border-bottom: 1px solid #eee; /* Optional separator */
+    padding-bottom: 15px;
+}
+
+.blog-post-content h3 {
+    margin-top: 30px; /* Space before subheadings */
+    margin-bottom: 10px;
+     font-family: 'Roboto Slab', serif;
+     color: #444;
+}
+
+.blog-post-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.blog-post-content ul {
+    margin-bottom: 20px;
+    padding-left: 20px; /* Indent list */
+}
+
+.blog-post-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Optional: Style for related links */
+.blog-post-content .related-links h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Ensure the first content section clears the fixed header */
+/* This rule was added in the previous step, ensure it's correct */
+main .content-section:first-of-type {
+     margin-top: 80px; /* Adjust based on your header height */
+}
