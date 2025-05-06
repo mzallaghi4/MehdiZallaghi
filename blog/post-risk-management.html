@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management in Finance - Blog - Mehdi Zallaghi</title> <!-- Specific Title -->
+    <link rel="stylesheet" href="../style.css"> <!-- Path adjusted -->
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"> <!-- Path adjusted -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+             <!-- Brand/Logo area - Link back to main page -->
+            <div class="site-title"><a href="../index.html">Mehdi Zallaghi</a></div> <!-- Link back to index -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="site-nav">
+                <ul>
+                    <!-- Links point back to sections on the main page -->
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#publications">Publications</a></li>
+                    <li><a href="../blog.html">Blog</a></li> <!-- Link back to the blog index -->
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main content section for the blog post -->
+        <section id="risk-management-post" class="content-section fade-in-section alternate-bg"> <!-- Using alternate-bg for variety -->
+            <div class="container blog-post-content"> <!-- Added blog-post-content class -->
+                <h2>Quantitative Approaches to Financial Risk Management</h2>
+
+                <p class="blog-date">Published on: November 5, 2023 | By Mehdi Zallaghi</p>
+
+                <p>
+                    Financial risk management is the practice of identifying, analyzing, and taking steps to reduce or eliminate the financial risks that can threaten a company's or individual's financial well-being. In today's complex and interconnected financial world, quantitative methods are indispensable tools for effective risk management.
+                </p>
+
+                <h3>Key Types of Financial Risk</h3>
+                <p>
+                    Quantitative analysts typically focus on measurable risks:
+                </p>
+                <ul>
+                    <li><strong>Market Risk:</strong> The risk of losses in on- or off-balance-sheet positions arising from movements in market prices. Quant techniques here include VaR (Value at Risk), Expected Shortfall (ES), and stress testing.</li>
+                    <li><strong>Credit Risk:</strong> The risk of loss arising from a borrower's failure to repay a loan or meet contractual obligations. Quantitative models estimate Probability of Default (PD), Loss Given Default (LGD), and Exposure at Default (EAD).</li>
+                    <li><strong>Operational Risk:</strong> The risk of loss resulting from inadequate or failed internal processes, people, and systems or from external events. While harder to quantify, statistical modeling and scenario analysis are used.</li>
+                    <li><strong>Liquidity Risk:</strong> The risk that an entity will not be able to meet its short-term obligations. Quantitative models simulate cash flows under various scenarios.</li>
+                </ul>
+
+                <h3>Core Quantitative Tools and Metrics</h3>
+                <p>
+                    A quant's toolkit for risk management includes:
+                </p>
+                <ul>
+                    <li><strong>Value at Risk (VaR):</strong> A widely used metric estimating the maximum potential loss over a specified time horizon with a certain confidence level (e.g., 99%).</li>
+                    <li><strong>Expected Shortfall (ES) / Conditional VaR (CVaR):</strong> Measures the expected loss given that the loss exceeds the VaR. It provides a more conservative view of tail risk than VaR.</li>
+                    <li><strong>Stress Testing:</strong> Simulating the impact of extreme, but plausible, market movements or events on portfolio values.</li>
+                    <li><strong>Credit Scoring Models:</strong> Statistical or machine learning models (like logistic regression, decision trees, or neural networks) predicting the probability of a borrower defaulting.</li>
+                    <li><strong>Monte Carlo Simulation:</strong> Used extensively for modeling complex derivatives, portfolio risk, and stress testing by simulating thousands or millions of possible future scenarios.</li>
+                    <li><strong>Time Series Analysis:</strong> Modeling volatility (e.g., GARCH models) and correlations to forecast future risk measures.</li>
+                </ul>
+
+                <h3>Regulatory Landscape</h3>
+                <p>
+                    Quantitative risk management is heavily influenced by regulatory frameworks like Basel Accords (Basel I, II, III), Dodd-Frank Act, and Solvency II, which mandate specific methodologies and reporting requirements for financial institutions. Model risk management, assessing and mitigating the risks arising from the use of quantitative models themselves, has also become a critical area.
+                </p>
+
+                <p>
+                    Effective risk management is not just about compliance; it's about making informed decisions, protecting capital, and ensuring the long-term stability of financial systems. Quantitative expertise is at the forefront of this critical function.
+                </p>
+
+                 <!-- Optional: Add links to related projects or publications -->
+                <!--
+                <div class="related-links" style="margin-top: 40px;">
+                    <h4>Related:</h4>
+                     <p><a href="../index.html#projects" class="button-link secondary">See my Risk Management Project</a></p>
+                    <p><a href="../index.html#publications" class="button-link secondary">Relevant Publication Title</a></p>
+                </div>
+                -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Mehdi Zallaghi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script> <!-- Path adjusted -->
+</body>
+</html>
