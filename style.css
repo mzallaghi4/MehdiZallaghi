@@ -1,268 +1,220 @@
-/* Basic Reset */
-* {
+/* --- Header Styles --- */
+.site-header {
+    position: fixed; /* Makes the header sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0; /* Adjust padding as needed */
+    z-index: 1000; /* Ensures header stays on top */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transition for scroll effect */
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between; /* Space out title and nav */
+    align-items: center; /* Vertically align items */
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif; /* Or your preferred heading font */
+}
+
+.site-title a {
+    color: #333; /* Or your primary text color */
+    text-decoration: none;
+}
+
+.site-nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex; /* Arrange nav items horizontally on desktop */
 }
 
-/* Variables for easy customization */
-:root {
-    --primary-color: #005f73; /* Dark Teal/Blue */
-    --secondary-color: #0a9396; /* Teal */
-    --accent-color: #ee9b00; /* Orange/Gold */
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --light-grey: #ddd;
-    --dark-grey: #555;
-    --container-max-width: 960px;
+.site-nav li {
+    margin-left: 20px; /* Space between nav items */
 }
 
-body {
-    font-family: 'Open Sans', sans-serif; /* Primary font */
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    scroll-behavior: smooth; /* Smooth scrolling for navigation */
-}
-
-.container {
-    max-width: var(--container-max-width);
-    margin: auto;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-header {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-header .tagline {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    color: var(--light-grey);
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav a {
-    color: #fff;
+.site-nav a {
     text-decoration: none;
+    color: #555; /* Or your navigation link color */
     font-weight: 400;
     transition: color 0.3s ease;
+    padding: 0.5rem 0; /* Add some clickable area */
 }
 
-header nav a:hover {
-    color: var(--accent-color);
+.site-nav a:hover {
+    color: #007bff; /* Highlight color on hover */
 }
 
-/* Sections */
-section {
-    padding: 40px 0;
-    margin-bottom: 30px;
-    background: #fff; /* White background for sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Header style on scroll (optional, adds visual feedback) */
+.site-header.scrolled {
+    background-color: #fff; /* Solid white when scrolled */
+    padding: 0.75rem 0; /* Slightly smaller padding */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-section h2 {
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-    font-weight: 600;
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none; /* Hide by default on desktop */
+    background: none;
+    border: none;
+    font-size: 1.8rem; /* Adjust icon size */
+    color: #333; /* Icon color */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Ensure it's above the nav when open */
 }
 
-#about p {
-    margin-bottom: 15px;
-    text-align: justify;
+/* --- Publications Section Styles --- */
+.publications-list {
+    /* Optional: Add grid or flexbox for layout if you want multiple columns */
 }
 
-/* Skills Section */
-#skills .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.skill-category h3 {
-    color: var(--secondary-color);
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-align: center; /* Center category titles */
-}
-
-.skill-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-category ul li {
-    background: var(--background-color); /* Light background for list items */
-    border-left: 4px solid var(--secondary-color);
-    margin-bottom: 8px;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-family: 'Roboto Mono', monospace; /* Monospace for technical skills */
-    font-size: 0.95em;
-    color: var(--dark-grey);
-}
-
-
-/* Projects Section */
-#projects .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-item {
-    background: #fff;
+.publication-item {
+    background-color: #fff; /* Card-like background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    border: 1px solid var(--light-grey);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px; /* Space between publications */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.project-item h3 {
-    color: var(--secondary-color);
+.publication-item h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 600;
+    color: #333; /* Or your heading color */
+    font-family: 'Roboto Slab', serif;
 }
 
-.project-item p {
-    flex-grow: 1; /* Makes description take up available space */
-    margin-bottom: 15px;
-    color: var(--dark-grey);
-    font-size: 0.95em;
+.publication-item p {
+    margin-bottom: 8px;
+    color: #555; /* Or your text color */
 }
 
-.project-item a {
-    display: inline-block;
-    background: var(--accent-color);
-    color: #fff;
+.publication-item .publication-links {
+    margin-top: 15px;
+}
+
+/* Style the button-link class used for publications (assuming you have button-link styles elsewhere) */
+.publication-links .button-link {
+    /* Inherit existing button-link styles or add specific ones */
+    display: inline-block; /* Or block if they should stack */
+    margin-right: 10px; /* Space between buttons */
+    margin-bottom: 5px; /* Space below buttons */
     padding: 8px 15px;
+    background-color: #007bff; /* Example primary color */
+    color: white;
     text-decoration: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    transition: background 0.3s ease;
-    font-size: 0.9em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.project-item a:hover {
-    background: #cc8000; /* Darker accent color */
+.publication-links .button-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Contact Section */
-#contact {
-    text-align: center;
+
+/* --- Blog Section Styles --- */
+.blog-list {
+    /* Optional: Add grid or flexbox for layout */
 }
 
-#contact .contact-links a {
-    display: inline-block;
-    margin: 0 10px;
-    color: var(--primary-color);
+.blog-item {
+    background-color: #fff; /* Card-like background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between blog posts */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item h3 {
+     margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.blog-item h3 a {
     text-decoration: none;
-    font-size: 1.1em;
+    color: #333; /* Link color for title */
+    font-family: 'Roboto Slab', serif;
     transition: color 0.3s ease;
 }
 
-#contact .contact-links a:hover {
-    color: var(--accent-color);
+.blog-item h3 a:hover {
+     color: #007bff; /* Highlight color on hover */
+     text-decoration: underline;
 }
 
-
-/* Footer */
-footer {
-    background: var(--dark-grey);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
+.blog-item .blog-date {
     font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    header .container {
-        padding: 0 10px;
+.blog-item p {
+     margin-bottom: 15px;
+     color: #555;
+}
+
+.blog-item .blog-links .button-link {
+    /* Inherit existing button-link styles or add specific ones */
+    display: inline-block;
+     padding: 8px 15px;
+    background-color: #007bff; /* Example primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-item .blog-links .button-link:hover {
+     background-color: #0056b3;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .site-header .container {
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items when wrapped */
     }
 
-    header nav ul li {
-        margin: 0 10px;
+    .site-title {
+        flex-basis: 100%; /* Title takes full width */
+        text-align: center;
+        margin-bottom: 10px;
     }
 
-    header h1 {
-        font-size: 1.8em;
+     .menu-toggle {
+        display: block; /* Show hamburger menu button */
+        position: absolute; /* Position it in the corner */
+        top: 1rem;
+        right: 1rem;
     }
 
-    header .tagline {
-        font-size: 1em;
+    .site-nav {
+        width: 100%; /* Nav takes full width */
+        display: none; /* Hide nav by default */
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9); /* Background for dropdown menu */
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    section {
-        padding: 30px 0;
-        margin-bottom: 20px;
+    .site-nav.active {
+        display: flex; /* Show nav when active */
     }
 
-    section h2 {
-        font-size: 1.8em;
-        margin-bottom: 20px;
+    .site-nav ul {
+        flex-direction: column; /* Stack list items */
     }
 
-    #skills .skills-grid {
-        grid-template-columns: 1fr; /* Stack skills on small screens */
-    }
-
-    .skill-category h3 {
-         text-align: left; /* Align category titles left on small screens */
-    }
-
-    #projects .projects-grid {
-        grid-template-columns: 1fr; /* Stack projects on small screens */
-    }
-
-    .project-item {
-        padding: 15px;
-    }
-
-    .project-item h3 {
-        font-size: 1.2em;
-    }
-
-    .project-item p {
-        font-size: 0.9em;
-    }
-
-    .project-item a {
-         padding: 6px 12px;
-         font-size: 0.85em;
-         margin-right: 5px;
-    }
-
-    #contact .contact-links a {
-        font-size: 1em;
-        margin: 0 8px;
-    }
-
-    footer {
-        padding: 15px 0;
+    .site-nav li {
+        margin: 10px 0; /* Space out stacked nav items */
     }
 }
