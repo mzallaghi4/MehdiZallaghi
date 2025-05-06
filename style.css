@@ -1,0 +1,268 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for easy customization */
+:root {
+    --primary-color: #005f73; /* Dark Teal/Blue */
+    --secondary-color: #0a9396; /* Teal */
+    --accent-color: #ee9b00; /* Orange/Gold */
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --light-grey: #ddd;
+    --dark-grey: #555;
+    --container-max-width: 960px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Primary font */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth; /* Smooth scrolling for navigation */
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+header .tagline {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: var(--light-grey);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+    background: #fff; /* White background for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#about p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Skills Section */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-category h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center; /* Center category titles */
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    background: var(--background-color); /* Light background for list items */
+    border-left: 4px solid var(--secondary-color);
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-family: 'Roboto Mono', monospace; /* Monospace for technical skills */
+    font-size: 0.95em;
+    color: var(--dark-grey);
+}
+
+
+/* Projects Section */
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item h3 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-item p {
+    flex-grow: 1; /* Makes description take up available space */
+    margin-bottom: 15px;
+    color: var(--dark-grey);
+    font-size: 0.95em;
+}
+
+.project-item a {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    font-size: 0.9em;
+}
+
+.project-item a:hover {
+    background: #cc8000; /* Darker accent color */
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact .contact-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#contact .contact-links a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Footer */
+footer {
+    background: var(--dark-grey);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 10px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 30px 0;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    #skills .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills on small screens */
+    }
+
+    .skill-category h3 {
+         text-align: left; /* Align category titles left on small screens */
+    }
+
+    #projects .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+
+    .project-item h3 {
+        font-size: 1.2em;
+    }
+
+    .project-item p {
+        font-size: 0.9em;
+    }
+
+    .project-item a {
+         padding: 6px 12px;
+         font-size: 0.85em;
+         margin-right: 5px;
+    }
+
+    #contact .contact-links a {
+        font-size: 1em;
+        margin: 0 8px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
